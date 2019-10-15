@@ -1,0 +1,30 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.Container-item {
+  box-sizing: border-box;
+  list-style: none;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .Container {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .Container-item {
+    flex: 0 0 33.33%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Container-item {
+    flex: 0 1 16.6666%;
+  }
+}
